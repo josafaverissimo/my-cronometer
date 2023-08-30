@@ -4,7 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Cronometer</title>
+    <title>Chronometer</title>
 </head>
 
 <body style="
@@ -16,7 +16,7 @@
         font-size: 5rem;
     ">
     <div style="display: flex; flex-direction: column; align-items: center;">
-        <h1 style="margin-bottom: 0; padding-bottom: 0;">Meu cronômetro</h1>
+        <h1 style="margin: 0; padding-bottom: 0;">Meu cronômetro</h1>
         <span id="time"></span>
     </div>
 

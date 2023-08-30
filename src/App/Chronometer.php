@@ -4,11 +4,11 @@ namespace Src\App;
 
 use Src\Core\Helpers;
 
-use PDO;
+use \PDO;
 
-class Cronometer
+class Chronometer
 {
-    private Pdo $connection;
+    private PDO $connection;
 
     public function __construct()
     {
@@ -19,7 +19,7 @@ class Cronometer
     {
         $dateTime = $this->getDateTime();
 
-        echo Helpers::loadView("cronometer", [
+        echo Helpers::loadView("chronometer", [
             "dateTime" => $dateTime
         ]);
     }

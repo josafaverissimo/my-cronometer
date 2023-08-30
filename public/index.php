@@ -2,18 +2,18 @@
 
 require __DIR__ . "/../vendor/autoload.php";
 
-use Src\App\Cronometer;
+use Src\App\Chronometer;
 
-$cronometer = new Cronometer();
+$chronometer = new Chronometer();
 
 if ($_SERVER["REQUEST_METHOD"] === "POST") {
     if ($_POST) {
         $startTime = filter_var($_POST['start_time'], FILTER_SANITIZE_SPECIAL_CHARS);
 
-        $cronometer->store($startTime);
+        $chronometer->store($startTime);
     }
 }
 
 if ($_SERVER["REQUEST_METHOD"] === "GET") {
-    $cronometer->page();
+    $chronometer->page();
 }
